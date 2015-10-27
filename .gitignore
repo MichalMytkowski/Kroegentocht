@@ -16,6 +16,7 @@ local.properties
 .settings/
 .loadpath
 
+
 # External tool builders
 .externalToolBuilders/
 
@@ -27,6 +28,16 @@ local.properties
 
 # PDT-specific
 .buildpath
+
+
+#################
+## IntelliJ
+#################
+
+##Ignore iml files
+*.iml
+out/
+.idea/
 
 
 #################

@@ -9,21 +9,48 @@ package model;
  */
 public class Cafe {
 
+
 	private Adres cafeAdres;
 	private CafeSoort cafeSoort;
-	
+	private String cafeNaam;
 	/**
 	 * Constructor
 	 * 
 	 * @param cafeAdres
 	 * @param cafeSoort
 	 */
-	public Cafe(Adres cafeAdres, CafeSoort cafeSoort)
+	public Cafe(String cafeNaam,Adres cafeAdres, CafeSoort cafeSoort)
 	{
+		this.cafeNaam = cafeNaam;
 		this.cafeAdres = cafeAdres;
 		this.cafeSoort = cafeSoort;
 	}
-	
+
+
+
+	/**
+	 * Standaard constructor
+	 */
+	public Cafe(){
+
+	}
+
+	/**
+	 *
+	 * @return
+	 */
+	public String getCafeNaam() {
+		return cafeNaam;
+	}
+
+	/**
+	 *
+	 * @param cafeNaam
+	 */
+	public void setCafeNaam(String cafeNaam) {
+		this.cafeNaam = cafeNaam;
+	}
+
 	/**
 	 * 
 	 * @return
